@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="testCases.TC014_TC018">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testExcludeOutOfStock"/>
+          <include name="testPresenceOfBookshelves"/>
+          <include name="setup"/>
+          <include name="pages"/>
+          <include name="checkStorageTypeTag"/>
+        </methods>
+      </class> <!-- testCases.TC014_TC018 -->
+      <class name="testCases.TC010_TC013">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testPriceTagSliderWithValue"/>
+          <include name="pages"/>
+        </methods>
+      </class> <!-- testCases.TC010_TC013 -->
+      <class name="testCases.TC019_TC021">
+        <methods>
+          <include name="testModalOpening"/>
+          <include name="tearDown"/>
+          <include name="testUrlAfterBack"/>
+          <include name="setup"/>
+          <include name="testWithInvalidData"/>
+          <include name="pages"/>
+        </methods>
+      </class> <!-- testCases.TC019_TC021 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

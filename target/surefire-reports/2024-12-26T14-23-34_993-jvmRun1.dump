@@ -1,0 +1,27 @@
+# Created at 2024-12-26T14:23:37.427
+org.testng.TestNGException: 
+testCases.TC019_TC021.testUrlAfterBack() depends on nonexistent method testCases.TC014_TC017.testPresenceOfBookshelves
+	at org.testng.internal.MethodHelper.findDependedUponMethods(MethodHelper.java:114)
+	at org.testng.internal.MethodHelper.topologicalSort(MethodHelper.java:240)
+	at org.testng.internal.MethodHelper.sortMethods(MethodHelper.java:317)
+	at org.testng.internal.MethodHelper.collectAndOrderMethods(MethodHelper.java:59)
+	at org.testng.TestRunner.initMethods(TestRunner.java:481)
+	at org.testng.TestRunner.init(TestRunner.java:235)
+	at org.testng.TestRunner.init(TestRunner.java:205)
+	at org.testng.TestRunner.<init>(TestRunner.java:153)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:522)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:157)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:111)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1273)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1260)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+

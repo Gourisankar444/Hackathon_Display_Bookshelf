@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="27" passed="21" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-16T12:23:53 IST" name="Suite" finished-at="2025-01-16T12:24:30 IST" duration-ms="37364">
+    <groups>
+      <group name="smoke">
+        <method signature="SmokeTest.testFieldOasisPresence()[pri:2, instance:testCases.SmokeTest@48f278eb]" name="testFieldOasisPresence" class="testCases.SmokeTest"/>
+        <method signature="SmokeTest.testFieldPresence()[pri:1, instance:testCases.SmokeTest@48f278eb]" name="testFieldPresence" class="testCases.SmokeTest"/>
+        <method signature="SmokeTest.testULServicesPresence()[pri:3, instance:testCases.SmokeTest@48f278eb]" name="testULServicesPresence" class="testCases.SmokeTest"/>
+        <method signature="SmokeTest.testValidUrl()[pri:0, instance:testCases.SmokeTest@48f278eb]" name="testValidUrl" class="testCases.SmokeTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2025-01-16T12:23:53 IST" name="Test" finished-at="2025-01-16T12:24:30 IST" duration-ms="37364">
+      <class name="testCases.CollectionsSubMenuRetrievalTest">
+        <test-method is-config="true" signature="pages()[pri:0, instance:testCases.CollectionsSubMenuRetrievalTest@f5acb9d]" started-at="2025-01-16T12:24:14 IST" name="pages" finished-at="2025-01-16T12:24:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pages -->
+        <test-method signature="dropDownAppearanceValidation()[pri:16, instance:testCases.CollectionsSubMenuRetrievalTest@f5acb9d]" started-at="2025-01-16T12:24:14 IST" name="dropDownAppearanceValidation" finished-at="2025-01-16T12:24:15 IST" duration-ms="747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownAppearanceValidation -->
+        <test-method signature="dropDownSubMenuValidation()[pri:17, instance:testCases.CollectionsSubMenuRetrievalTest@f5acb9d]" started-at="2025-01-16T12:24:15 IST" name="dropDownSubMenuValidation" finished-at="2025-01-16T12:24:15 IST" depends-on-methods="testCases.CollectionsSubMenuRetrievalTest.dropDownAppearanceValidation" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownSubMenuValidation -->
+      </class> <!-- testCases.CollectionsSubMenuRetrievalTest -->
+      <class name="testCases.SmokeTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.SmokeTest@48f278eb]" started-at="2025-01-16T12:23:53 IST" name="setup" finished-at="2025-01-16T12:24:01 IST" duration-ms="8102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="pages()[pri:0, instance:testCases.SmokeTest@48f278eb]" started-at="2025-01-16T12:24:01 IST" name="pages" finished-at="2025-01-16T12:24:01 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pages -->
+        <test-method signature="testValidUrl()[pri:0, instance:testCases.SmokeTest@48f278eb]" started-at="2025-01-16T12:24:01 IST" name="testValidUrl" finished-at="2025-01-16T12:24:01 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidUrl -->
+        <test-method signature="testFieldPresence()[pri:1, instance:testCases.SmokeTest@48f278eb]" started-at="2025-01-16T12:24:01 IST" name="testFieldPresence" finished-at="2025-01-16T12:24:01 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFieldPresence -->
+        <test-method signature="testFieldOasisPresence()[pri:2, instance:testCases.SmokeTest@48f278eb]" started-at="2025-01-16T12:24:01 IST" name="testFieldOasisPresence" finished-at="2025-01-16T12:24:01 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFieldOasisPresence -->
+        <test-method signature="testULServicesPresence()[pri:3, instance:testCases.SmokeTest@48f278eb]" started-at="2025-01-16T12:24:01 IST" name="testULServicesPresence" finished-at="2025-01-16T12:24:01 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testULServicesPresence -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.SmokeTest@48f278eb]" started-at="2025-01-16T12:24:26 IST" name="tearDown" finished-at="2025-01-16T12:24:30 IST" duration-ms="3949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.SmokeTest -->
+      <class name="testCases.ULServicesFormTest">
+        <test-method is-config="true" signature="pages()[pri:0, instance:testCases.ULServicesFormTest@4fb3ee4e]" started-at="2025-01-16T12:24:15 IST" name="pages" finished-at="2025-01-16T12:24:15 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pages -->
+        <test-method signature="checkULPageTitle([Ljava.lang.String;)[pri:18, instance:testCases.ULServicesFormTest@4fb3ee4e]" started-at="2025-01-16T12:24:15 IST" name="checkULPageTitle" data-provider="configData" finished-at="2025-01-16T12:24:18 IST" duration-ms="2783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7bd96822]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkULPageTitle -->
+        <test-method signature="FillULInvalidData()[pri:19, instance:testCases.ULServicesFormTest@4fb3ee4e]" started-at="2025-01-16T12:24:18 IST" name="FillULInvalidData" finished-at="2025-01-16T12:24:19 IST" depends-on-methods="testCases.ULServicesFormTest.checkULPageTitle" duration-ms="1054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillULInvalidData -->
+        <test-method signature="FillULValidData()[pri:20, instance:testCases.ULServicesFormTest@4fb3ee4e]" started-at="2025-01-16T12:24:19 IST" name="FillULValidData" finished-at="2025-01-16T12:24:26 IST" depends-on-methods="testCases.ULServicesFormTest.FillULInvalidData" duration-ms="7371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillULValidData -->
+      </class> <!-- testCases.ULServicesFormTest -->
+      <class name="testCases.BookshelvesPriceFilterTest">
+        <test-method is-config="true" signature="pages()[pri:0, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:01 IST" name="pages" finished-at="2025-01-16T12:24:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pages -->
+        <test-method signature="bookShelvesSubmenuPresence()[pri:4, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:01 IST" name="bookShelvesSubmenuPresence" finished-at="2025-01-16T12:24:01 IST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookShelvesSubmenuPresence -->
+        <test-method signature="bookShelvesClick()[pri:5, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:01 IST" name="bookShelvesClick" finished-at="2025-01-16T12:24:04 IST" depends-on-methods="testCases.BookshelvesPriceFilterTest.bookShelvesSubmenuPresence" duration-ms="2678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookShelvesClick -->
+        <test-method signature="checkBookshelvesPageTitle([Ljava.lang.String;)[pri:6, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:04 IST" name="checkBookshelvesPageTitle" data-provider="configData" finished-at="2025-01-16T12:24:04 IST" depends-on-methods="testCases.BookshelvesPriceFilterTest.bookShelvesClick" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@c41709a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBookshelvesPageTitle -->
+        <test-method signature="checkFilters()[pri:7, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:04 IST" name="checkFilters" finished-at="2025-01-16T12:24:08 IST" depends-on-methods="testCases.BookshelvesPriceFilterTest.checkBookshelvesPageTitle" duration-ms="3291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFilters -->
+        <test-method signature="checkPriceTagSlider()[pri:8, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:08 IST" name="checkPriceTagSlider" finished-at="2025-01-16T12:24:08 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPriceTagSlider -->
+        <test-method signature="testPriceTagSliderWithValue()[pri:9, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:08 IST" name="testPriceTagSliderWithValue" finished-at="2025-01-16T12:24:08 IST" duration-ms="926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPriceTagSliderWithValue -->
+        <test-method signature="checkStorageTypeTag()[pri:10, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:08 IST" name="checkStorageTypeTag" finished-at="2025-01-16T12:24:09 IST" duration-ms="1003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStorageTypeTag -->
+        <test-method signature="testStorageTypeTagWithValue()[pri:11, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:09 IST" name="testStorageTypeTagWithValue" finished-at="2025-01-16T12:24:10 IST" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStorageTypeTagWithValue -->
+        <test-method signature="testExcludeOutOfStock()[pri:12, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:10 IST" name="testExcludeOutOfStock" finished-at="2025-01-16T12:24:11 IST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExcludeOutOfStock -->
+        <test-method signature="testSortBy()[pri:13, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:11 IST" name="testSortBy" finished-at="2025-01-16T12:24:11 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortBy -->
+        <test-method signature="testPresenceOfBookshelves()[pri:14, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:11 IST" name="testPresenceOfBookshelves" finished-at="2025-01-16T12:24:12 IST" depends-on-methods="testCases.BookshelvesPriceFilterTest.testSortBy, testCases.BookshelvesPriceFilterTest.testExcludeOutOfStock, testCases.BookshelvesPriceFilterTest.testPriceTagSliderWithValue, testCases.BookshelvesPriceFilterTest.checkStorageTypeTag" duration-ms="1528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPresenceOfBookshelves -->
+        <test-method signature="testUrlAfterBack([Ljava.lang.String;)[pri:15, instance:testCases.BookshelvesPriceFilterTest@543588e6]" started-at="2025-01-16T12:24:12 IST" name="testUrlAfterBack" data-provider="configData" finished-at="2025-01-16T12:24:14 IST" depends-on-methods="testCases.BookshelvesPriceFilterTest.testPresenceOfBookshelves" duration-ms="1668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@31b7d869]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUrlAfterBack -->
+      </class> <!-- testCases.BookshelvesPriceFilterTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

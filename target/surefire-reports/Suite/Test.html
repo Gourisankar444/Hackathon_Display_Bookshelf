@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 16 12:23:53 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>37 seconds (37364 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.BookshelvesPriceFilterTest.testUrlAfterBack()'><b>testUrlAfterBack</b><br>Test class: testCases.BookshelvesPriceFilterTest<br>Parameters: [Ljava.lang.String;@31b7d869</td>
+<td></td>
+<td>1</td>
+<td>testCases.BookshelvesPriceFilterTest@543588e6</td></tr>
+<tr>
+<td title='testCases.ULServicesFormTest.checkULPageTitle()'><b>checkULPageTitle</b><br>Test class: testCases.ULServicesFormTest<br>Parameters: [Ljava.lang.String;@7bd96822</td>
+<td></td>
+<td>2</td>
+<td>testCases.ULServicesFormTest@4fb3ee4e</td></tr>
+<tr>
+<td title='testCases.ULServicesFormTest.FillULInvalidData()'><b>FillULInvalidData</b><br>Test class: testCases.ULServicesFormTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.ULServicesFormTest@4fb3ee4e</td></tr>
+<tr>
+<td title='testCases.BookshelvesPriceFilterTest.bookShelvesClick()'><b>bookShelvesClick</b><br>Test class: testCases.BookshelvesPriceFilterTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.BookshelvesPriceFilterTest@543588e6</td></tr>
+<tr>
+<td title='testCases.BookshelvesPriceFilterTest.checkBookshelvesPageTitle()'><b>checkBookshelvesPageTitle</b><br>Test class: testCases.BookshelvesPriceFilterTest<br>Parameters: [Ljava.lang.String;@c41709a</td>
+<td></td>
+<td>0</td>
+<td>testCases.BookshelvesPriceFilterTest@543588e6</td></tr>
+<tr>
+<td title='testCases.BookshelvesPriceFilterTest.checkStorageTypeTag()'><b>checkStorageTypeTag</b><br>Test class: testCases.BookshelvesPriceFilterTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.BookshelvesPriceFilterTest@543588e6</td></tr>
+<tr>
+<td title='testCases.BookshelvesPriceFilterTest.testStorageTypeTagWithValue()'><b>testStorageTypeTagWithValue</b><br>Test class: testCases.BookshelvesPriceFilterTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.BookshelvesPriceFilterTest@543588e6</td></tr>
+<tr>
+<td title='testCases.CollectionsSubMenuRetrievalTest.dropDownAppearanceValidation()'><b>dropDownAppearanceValidation</b><br>Test class: testCases.CollectionsSubMenuRetrievalTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CollectionsSubMenuRetrievalTest@f5acb9d</td></tr>
+<tr>
+<td title='testCases.BookshelvesPriceFilterTest.testPresenceOfBookshelves()'><b>testPresenceOfBookshelves</b><br>Test class: testCases.BookshelvesPriceFilterTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.BookshelvesPriceFilterTest@543588e6</td></tr>
+<tr>
+<td title='testCases.BookshelvesPriceFilterTest.checkFilters()'><b>checkFilters</b><br>Test class: testCases.BookshelvesPriceFilterTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.BookshelvesPriceFilterTest@543588e6</td></tr>
+<tr>
+<td title='testCases.BookshelvesPriceFilterTest.checkPriceTagSlider()'><b>checkPriceTagSlider</b><br>Test class: testCases.BookshelvesPriceFilterTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.BookshelvesPriceFilterTest@543588e6</td></tr>
+<tr>
+<td title='testCases.ULServicesFormTest.FillULValidData()'><b>FillULValidData</b><br>Test class: testCases.ULServicesFormTest</td>
+<td></td>
+<td>7</td>
+<td>testCases.ULServicesFormTest@4fb3ee4e</td></tr>
+<tr>
+<td title='testCases.SmokeTest.testFieldPresence()'><b>testFieldPresence</b><br>Test class: testCases.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.SmokeTest@48f278eb</td></tr>
+<tr>
+<td title='testCases.BookshelvesPriceFilterTest.testPriceTagSliderWithValue()'><b>testPriceTagSliderWithValue</b><br>Test class: testCases.BookshelvesPriceFilterTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.BookshelvesPriceFilterTest@543588e6</td></tr>
+<tr>
+<td title='testCases.SmokeTest.testFieldOasisPresence()'><b>testFieldOasisPresence</b><br>Test class: testCases.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.SmokeTest@48f278eb</td></tr>
+<tr>
+<td title='testCases.SmokeTest.testULServicesPresence()'><b>testULServicesPresence</b><br>Test class: testCases.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.SmokeTest@48f278eb</td></tr>
+<tr>
+<td title='testCases.BookshelvesPriceFilterTest.bookShelvesSubmenuPresence()'><b>bookShelvesSubmenuPresence</b><br>Test class: testCases.BookshelvesPriceFilterTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.BookshelvesPriceFilterTest@543588e6</td></tr>
+<tr>
+<td title='testCases.BookshelvesPriceFilterTest.testExcludeOutOfStock()'><b>testExcludeOutOfStock</b><br>Test class: testCases.BookshelvesPriceFilterTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.BookshelvesPriceFilterTest@543588e6</td></tr>
+<tr>
+<td title='testCases.CollectionsSubMenuRetrievalTest.dropDownSubMenuValidation()'><b>dropDownSubMenuValidation</b><br>Test class: testCases.CollectionsSubMenuRetrievalTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CollectionsSubMenuRetrievalTest@f5acb9d</td></tr>
+<tr>
+<td title='testCases.SmokeTest.testValidUrl()'><b>testValidUrl</b><br>Test class: testCases.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.SmokeTest@48f278eb</td></tr>
+<tr>
+<td title='testCases.BookshelvesPriceFilterTest.testSortBy()'><b>testSortBy</b><br>Test class: testCases.BookshelvesPriceFilterTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.BookshelvesPriceFilterTest@543588e6</td></tr>
+</table><p>
+</body>
+</html>
