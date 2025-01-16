@@ -30,29 +30,8 @@ public class HomePage {
 	@FindBy(xpath="//span[normalize-space()='Storage Furniture']")
 	WebElement furnitureEle;
 	
-	@FindBy(xpath="//li[@class='header__topBarIconList_profile-icon']")
-	WebElement loginIcon;
-	
-	@FindBy(xpath="//header[@id='header']/div[1]/div/section[3]/ul/li[2]/span/ul")
-	WebElement loginDropdown;
-	
 	@FindBy(xpath="//span[normalize-space()='Oasis Collection']/following-sibling::div//a")
 	List<WebElement> ele;
-	
-	@FindBy(id="login_dialog")
-	WebElement modal;
-	
-	@FindBy(id="header-icon-login")
-	WebElement loginLink;
-	
-	@FindBy(xpath="//div[@id='password-credentials']//input[@id='spree_user_email']")
-	WebElement emailInput;
-	
-	@FindBy(xpath="//input[@id='spree_user_password' and @placeholder='Password']")
-	WebElement passInput;
-	
-	@FindBy(id="ul_site_login")
-	WebElement loginBtn;
 	
 	public boolean checkStorageFurniture() {
 		return furnitureEle.isDisplayed();
@@ -68,11 +47,6 @@ public class HomePage {
 		return furnitureEle.isDisplayed();
 	}
 
-	public boolean checkLogin() {
-		// TODO Auto-generated method stub
-		return (loginIcon.isDisplayed() && loginIcon.isEnabled());
-	}
-
 	public boolean invokeDropDown() {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
@@ -81,7 +55,6 @@ public class HomePage {
 		action.moveToElement(oasisEle).perform();
 		
 		try {
-//			System.out.println(driver.findElement(By.xpath("//span[normalize-space()='Oasis Collection']//following-sibling::div")));
 			Wait<WebDriver> wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 			return wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='topnav_wrapper']/ul/li[1]/div")))).isDisplayed();
 		}
@@ -122,7 +95,6 @@ public class HomePage {
 		}
 	}
 
-	
      public void clickBookShelves() throws Exception{
 		// TODO Auto-generated method stub
 		Actions action=new Actions(driver);
@@ -130,47 +102,4 @@ public class HomePage {
 		String bookShelveLink=furnitureEle.findElement(By.xpath("//span[normalize-space()='Bookshelves']/parent::a")).getDomProperty("href");
 		driver.get(bookShelveLink);
 	}
-
-	public boolean checkLoginDropDown() {
-		// TODO Auto-generated method stub
-		Actions action=new Actions(driver);
-		action.moveToElement(loginIcon).perform();
-//		Wait<WebDriver> wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-//		wait.until(ExpectedConditions.visibilityOf(loginDropdown));
-		return loginDropdown.isDisplayed();
-	}
-
-	public void clickLoginLink() {
-		// TODO Auto-generated method stub
-		Actions action=new Actions(driver);
-		action.moveToElement(loginIcon).perform();
-		((JavascriptExecutor)driver).executeScript("arguments[0].click()",loginLink);
-		Wait<WebDriver> wait=new WebDriverWait(driver,Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOf(modal));
-	}
-
-
-
-	public boolean checkModalPresent() {
-		// TODO Auto-generated method stub
-		
-		return modal.isDisplayed();
-	}
-
-	public void enterValidEmail(String email) {
-		// TODO Auto-generated method stub
-//		Wait<WebDriver> wait=new WebDriverWait(driver,Duration.ofSeconds(20));
-//		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("signup-module"))));
-//		Thread.sleep(5000);
-//		emailInput.sendKeys(email);
-		((JavascriptExecutor)driver).executeScript("arguments[0].value='"+email+"'", emailInput);
-	}
-	public void enterInvalidPassword(String pass) {
-		((JavascriptExecutor)driver).executeScript("arguments[0].value='"+pass+"'", passInput);
-	}
-	public void clickLogin() {
-		((JavascriptExecutor)driver).executeScript("arguments[0].click()", loginBtn);
-	}
-	
-
 }
