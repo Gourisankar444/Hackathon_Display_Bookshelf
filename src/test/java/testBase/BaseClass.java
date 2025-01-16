@@ -27,7 +27,7 @@ public class BaseClass {
 	public void setup(@Optional("chrome")String browserChoice)
 	{
 		driver=WebDriverUtils.createWebDriver(driver, browserChoice);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
 		driver.get(baseUrl);
 		driver.manage().window().maximize();
 	}
