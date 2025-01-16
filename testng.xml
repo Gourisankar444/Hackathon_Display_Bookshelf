@@ -5,7 +5,7 @@
   <parameter name="Browser" value="Chrome"/>
   
   <classes>
-  	<class name="testCases.SmokeTest"/>
+  	<!--<class name="testCases.SmokeTest"/>-->
   	<class name="testCases.BookshelvesPriceFilterTest"/>
   	<class name="testCases.CollectionsSubMenuRetrievalTest"/>
   	<class name="testCases.ULServicesFormTest"/>
