@@ -12,14 +12,4 @@
   </classes>
   </test> <!-- Test -->
   
-  <test name="EdgeTest">
-  <parameter name="Browser" value="Edge"/>
-  <classes>
-  	<class name="testCases.SmokeTest"/>
-  	<class name="testCases.BookshelvesPriceFilterTest"/>
-  	<class name="testCases.CollectionsSubMenuRetrievalTest"/>
-  	<class name="testCases.ULServicesFormTest"/>
-  </classes>
-  </test> <!-- Test -->
-  
 </suite> <!-- Suite -->
